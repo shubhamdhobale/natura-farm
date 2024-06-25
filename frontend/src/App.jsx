@@ -35,10 +35,12 @@ const router = createBrowserRouter(
 
 const App = () => {
   return (
+    <div className='w-screen h-screen box-border'>
     <AuthProvider>
       <RouterProvider router={router} />
       <ToastContainer />
     </AuthProvider>
+    </div>
   );
 };
 

@@ -4,7 +4,7 @@ import cartimg from '../../public/assets/empty-cart.png'
 
 const Cart = () => {
   return (
-    <div className="flex items-center justify-center w-full">
+    <div className="flex items-center justify-center w-full relative top-20 pb-20">
       <div className="border shadow-lg w-fit flex flex-col items-center justify-center gap-3 py-14 mt-16">
         <img src={cartimg} alt="" className='w-1/3'/>
         <h2 className="text-lg font-bold">Your Cart is Empty</h2>

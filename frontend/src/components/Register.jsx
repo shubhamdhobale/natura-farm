@@ -1,4 +1,4 @@
-import img from "../../public/assets/cow1.jpg";
+import img from "../../public/assets/cowlogin.jpg";
 import { Link, useNavigate } from "react-router-dom";
 import { auth, db, createUserWithEmailAndPassword, doc, setDoc } from "../firebase/firebaseConfig.js";
 import { useState } from "react";

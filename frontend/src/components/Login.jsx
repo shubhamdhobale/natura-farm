@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import img from '../../public/assets/cow1.jpg';
+import img from '../../public/assets/cowlogin.jpg';
 import { Link, useNavigate } from 'react-router-dom';
 import { auth, signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from '../firebase/firebaseConfig.js'; 
 import { useAuth } from '../context/AuthContext';

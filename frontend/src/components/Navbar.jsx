@@ -16,14 +16,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white z-50 shadow-md fixed w-full ">
+    <nav className="bg-white z-50 shadow-md fixed w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
             <Link to="/"><img className="h-8 w-auto" src="/logo.png" alt="Natura Farm" /></Link>
           </div>
           <div className="hidden sm:flex sm:items-center sm:space-x-8">
-            <Link to="/" className="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Why Natura</Link>
+            <Link to="/" className="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Home</Link>
             <Link to="/products" className="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Products</Link>
             <Link to="/blogs" className="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Blogs</Link>
             <Link to="/support" className="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Support</Link>
@@ -79,7 +79,7 @@ const Navbar = () => {
         {() => (
           <div className="sm:hidden" id="mobile-menu">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <Link to="/" className="text-gray-900 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium transition duration-300">Why Natura</Link>
+              <Link to="/" className="text-gray-900 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium transition duration-300">Home</Link>
               <Link to="/products" className="text-gray-900 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium transition duration-300">Products</Link>
               <Link to="/blogs" className="text-gray-900 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium transition duration-300">Blogs</Link>
               <Link to="/support" className="text-gray-900 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium transition duration-300">Support</Link>
