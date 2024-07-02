@@ -2,7 +2,7 @@
 const Button = () => {
   return (
     <button
-      className="font-semibold text-white rounded-lg py-2 hover:py-5 cursor-pointer w-full border-none bg-[#70bdca] flex justify-center items-center relative overflow-hidden hover:shadow-2xl hover:bg-[#70bdca]"
+      className="font-semibold text-white rounded-lg py-2 px-4 w-1/2 hover:py-5 cursor-pointer border-none bg-[#70bdca] flex justify-center items-center relative overflow-hidden hover:shadow-2xl hover:bg-[#70bdca]"
       style={{ position: 'relative' }}
     >
       <style jsx>{`
@@ -81,30 +81,30 @@ const Button = () => {
           transition: 0.7s;
         }
       `}</style>
-      <span className="span-mother flex">
-        <span className="transition-transform duration-200 mr-1">A</span>
-        <span className="transition-transform duration-300 mr-1">D</span>
-        <span className="transition-transform duration-400 mr-1">D</span>
+      <span className="span-mother flex tracking-wider">
+        <span className="transition-transform duration-200 ">A</span>
+        <span className="transition-transform duration-300 ">D</span>
+        <span className="transition-transform duration-400 ">D</span>
         <span className="transition-transform duration-400 mr-1"></span>
-        <span className="transition-transform duration-500 mr-1">T</span>
-        <span className="transition-transform duration-700 mr-1">O</span>
+        <span className="transition-transform duration-500 ">T</span>
+        <span className="transition-transform duration-700 ">O</span>
         <span className="transition-transform duration-700 mr-1"></span>
-        <span className="transition-transform duration-1000 mr-1">C</span>
-        <span className="transition-transform duration-1000 mr-1">A</span>
-        <span className="transition-transform duration-1000 mr-1">R</span>
+        <span className="transition-transform duration-1000 ">C</span>
+        <span className="transition-transform duration-1000 ">A</span>
+        <span className="transition-transform duration-1000 ">R</span>
         <span className="transition-transform duration-1000">T</span>
       </span>
       <span className="span-mother2 flex absolute">
-        <span className="transition-transform duration-200 mr-1">A</span>
-        <span className="transition-transform duration-300 mr-1">D</span>
-        <span className="transition-transform duration-400 mr-1">D</span>
+        <span className="transition-transform duration-200 ">A</span>
+        <span className="transition-transform duration-300 ">D</span>
+        <span className="transition-transform duration-400 ">D</span>
         <span className="transition-transform duration-400 mr-1"></span>
-        <span className="transition-transform duration-500 mr-1">T</span>
-        <span className="transition-transform duration-700 mr-1">O</span>
+        <span className="transition-transform duration-500 ">T</span>
+        <span className="transition-transform duration-700 ">O</span>
         <span className="transition-transform duration-700 mr-1"></span>
-        <span className="transition-transform duration-1000 mr-1">C</span>
-        <span className="transition-transform duration-1000 mr-1">A</span>
-        <span className="transition-transform duration-1000 mr-1">R</span>
+        <span className="transition-transform duration-1000 ">C</span>
+        <span className="transition-transform duration-1000 ">A</span>
+        <span className="transition-transform duration-1000 ">R</span>
         <span className="transition-transform duration-1000">T</span>
       </span>
     </button>

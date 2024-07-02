@@ -1,4 +1,4 @@
-const Products = [
+const ProductsData = [
   {
     id: 1,
     name: "A2 Desi Gir Cow Ghee",
@@ -36,7 +36,7 @@ const Products = [
     ratings: 4.6,
     reviews: 60,
     price: 5.99,
-    image: "https://example.com/images/greek-yogurt.jpg",
+    image: "../public/assets/gheejar.jpg",
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ const Products = [
     ratings: 4.8,
     reviews: 75,
     price: 6.99,
-    image: "https://example.com/images/butter.jpg",
+    image: "../public/assets/gheejar.jpg",
   },
   {
     id: 6,
@@ -54,7 +54,7 @@ const Products = [
     ratings: 4.4,
     reviews: 50,
     price: 4.99,
-    image: "https://example.com/images/cottage-cheese.jpg",
+    image: "../public/assets/gheejar.jpg",
   },
   {
     id: 7,
@@ -63,7 +63,7 @@ const Products = [
     ratings: 4.9,
     reviews: 110,
     price: 7.99,
-    image: "https://example.com/images/paneer.jpg",
+    image: "../public/assets/gheejar.jpg",
   },
   {
     id: 8,
@@ -72,7 +72,7 @@ const Products = [
     ratings: 4.7,
     reviews: 40,
     price: 4.49,
-    image: "https://example.com/images/kefir.jpg",
+    image: "../public/assets/gheejar.jpg",
   },
   {
     id: 9,
@@ -81,7 +81,7 @@ const Products = [
     ratings: 4.6,
     reviews: 85,
     price: 3.49,
-    image: "https://example.com/images/curd.jpg",
+    image: "../public/assets/gheejar.jpg",
   },
   {
     id: 10,
@@ -90,7 +90,7 @@ const Products = [
     ratings: 4.5,
     reviews: 45,
     price: 5.49,
-    image: "https://example.com/images/heavy-cream.jpg",
+    image: "../public/assets/gheejar.jpg",
   },
 ];
 
@@ -123,4 +123,8 @@ const feedbackData = [
   }
 ];
 
-export { Products , feedbackData}
+const blogsData = [
+
+];
+
+export { ProductsData , feedbackData , blogsData                      }

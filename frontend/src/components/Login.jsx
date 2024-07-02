@@ -70,7 +70,7 @@ const Login = () => {
   };
 
   return (
-    <div className='flex items-center justify-center relative top-20'>
+    <div className='flex items-center justify-center relative top-36'>
       <div className='flex flex-col items-center justify-center w-full max-w-md border px-8 py-8 rounded-lg shadow-lg'>
         <h1 className='font-bold text-2xl'>Login</h1>
         <p>Please enter email & password</p>

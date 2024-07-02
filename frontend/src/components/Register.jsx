@@ -47,7 +47,8 @@ const Register = () => {
   };
 
   return (
-    <div className='flex items-center justify-center relative top-20'>
+    <div className='flex items-center justify-center relative top-36 h-screen w-screen bg-[#f5f5f5]'> 
+
       <div className='flex flex-col items-center justify-center w-full max-w-md border px-8 py-8 rounded-lg shadow-lg '>
         <h1 className='font-bold text-2xl'>Welcome to Natura Family</h1>
         <p>Please fill the details below</p>

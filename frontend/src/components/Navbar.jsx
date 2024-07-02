@@ -4,6 +4,7 @@ import { faUser, faShoppingCart, faSignOutAlt, faBars, faTimes } from '@fortawes
 import { Transition } from '@headlessui/react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext.jsx';
+import logo from '../../public/assets/natura-farm.jpg'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,21 +13,21 @@ const Navbar = () => {
 
   const handleLogout = async () => {
     await logout();
-    navigate('/login'); // Redirect to login page after logging out
+    navigate('/login'); 
   };
 
   return (
     <nav className="bg-white z-50 shadow-md fixed w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+        <div className="flex justify-between h-24">
           <div className="flex-shrink-0 flex items-center">
-            <Link to="/"><img className="h-8 w-auto" src="/logo.png" alt="Natura Farm" /></Link>
+            <Link to="/"><img className="h-12 w-auto" src={logo} alt="Natura Farm" /></Link>
           </div>
           <div className="hidden sm:flex sm:items-center sm:space-x-8">
-            <Link to="/" className="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Home</Link>
-            <Link to="/products" className="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Products</Link>
-            <Link to="/blogs" className="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Blogs</Link>
-            <Link to="/support" className="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Support</Link>
+            <Link to="/" className="text-neutral-700 hover:text-gray-500 hover:underline  px-3 py-2 rounded-md text-md font-medium transition duration-700">Home</Link>
+            <Link to="/products" className="text-gray-900 hover:text-gray-500 hover:underline px-3 py-2 rounded-md text-md  font-medium transition duration-300">Products</Link>
+            <Link to="/contact" className="text-gray-900 hover:text-gray-500 hover:underline px-3 py-2 rounded-md text-md  font-medium transition duration-300">Contact Us</Link>
+            <Link to="/support" className="text-gray-900 hover:text-gray-500 hover:underline px-3 py-2 rounded-md text-md  font-medium transition duration-300">Support</Link>
           </div>
           <div className="hidden sm:flex sm:items-center sm:space-x-4">
             {isLoggedIn ? (
@@ -81,7 +82,7 @@ const Navbar = () => {
             <div className="px-2 pt-2 pb-3 space-y-1">
               <Link to="/" className="text-gray-900 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium transition duration-300">Home</Link>
               <Link to="/products" className="text-gray-900 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium transition duration-300">Products</Link>
-              <Link to="/blogs" className="text-gray-900 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium transition duration-300">Blogs</Link>
+              <Link to="/contact" className="text-gray-900 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium transition duration-300">Contact Us</Link>
               <Link to="/support" className="text-gray-900 hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium transition duration-300">Support</Link>
             </div>
           </div>

@@ -6,7 +6,7 @@ import cowimg1 from '../../public/assets/22586739_6667121.jpg'
 import cowimg2 from '../../public/assets/37456935_8531321.jpg'
 import gheejar from '../../public/assets/gheejar.jpg'
 import a2milk from '../../public/assets/a2-milk.jpg'
-import {Products , feedbackData} from "../Data.js";
+import {ProductsData , feedbackData} from "../Data.js";
 import Button from '../components/Button.jsx'
 import video from '../../public/assets/174105-850740019_medium.mp4'
 import ownerimg from '../../public/assets/owner1.jpg'
@@ -21,7 +21,7 @@ import farmer from '../../public/assets/farmers.jpg'
 
 const Home = () => {
 
-  const selectedProducts = Products.filter(product => product.selection);
+  const selectedProducts = ProductsData.filter(product => product.selection);
 
   return (
     <div className="w-full h-auto ">
@@ -123,12 +123,6 @@ const Home = () => {
 
 
 
-      {/* <section className="relative w-full h-screen flex items-center justify-center overflow-hidden pt-10">
-        <img src={gircowimg} alt="" className="w-full h-full object-cover absolute z-0 opacity-60"/>
-        <div className="relative w-2/3 text-center flex flex-col justify-center items-center z-10 bg-black bg-opacity-30 p-8 rounded-md">
-          <h1 className="font-bold text-3xl tracking-wide font-sans leading-loose drop-shadow-2xl text-white">Philosophy</h1>
-        </div>
-      </section> */}
 
 <section className="w-full flex flex-col px-20 py-20 gap-8">
   <div className="flex flex-col w-full items-center justify-center">
@@ -146,7 +140,7 @@ const Home = () => {
         <button className="relative px-8 py-4 w-1/3 ml-4 border-none rounded-md font-bold tracking-widest uppercase cursor-pointer text-[#70bdca] transition-all duration-500 text-sm outline outline-2 outline-[#70bdca] hover:text-white hover:scale-110 hover:outline-[#70bdca] hover:shadow-[4px_5px_17px_-4px_#268391] hover:bg-[#70bdca] ">
           Read More
         </button>
-      </div>
+      </div>                                                                                                                  
     </div>
     <div className="gap-4 flex flex-row w-full px-4 py-4 shadow-xl overflow-hidden h-60 hover:scale-105 transition-all duration-1000 ">
       <div className="w-1/2 overflow-hidden shadow-lg drop-shadow-2xl">
@@ -201,6 +195,8 @@ const Home = () => {
 
 
 
+
+
 <section className="relative w-full h-screen overflow-hidden flex flex-col  mt-20 pb-10 mb-20">
       <div className="relative w-full h-full">
         <img
@@ -222,6 +218,9 @@ const Home = () => {
       </div>
       </section>
 
+
+
+
       <section className="w-full h-full  px-20 py-20 flex flex-col justify-center items-center overflow-hidden">
       <h1 className="text-3xl font-bold">Customer&apos;s Love</h1>
       <div className="flex items-center justify-center w-5/6 mt-20 shadow-2xl rounded-md p-20 overflow-hidden relative">
@@ -236,6 +235,9 @@ const Home = () => {
         </div>
       </div>
     </section>
+
+
+
     </div>
   )
 }
