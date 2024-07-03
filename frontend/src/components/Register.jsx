@@ -1,8 +1,8 @@
+import { useState } from "react";
 import img from "../../public/assets/cowlogin.jpg";
 import { Link, useNavigate } from "react-router-dom";
 import { auth, db, createUserWithEmailAndPassword, doc, setDoc } from "../firebase/firebaseConfig.js";
-import { useState } from "react";
-import { Bounce, ToastContainer, toast} from 'react-toastify';
+import { Bounce, ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
@@ -38,7 +38,7 @@ const Register = () => {
       toast.success('User registered successfully!');
       console.log("User registered successfully!");
       setTimeout(() => {
-        navigate('/login')
+        navigate('/login');
       }, 2000);
     } catch (error) {
       console.error("Error registering user: ", error);
@@ -47,8 +47,7 @@ const Register = () => {
   };
 
   return (
-    <div className='flex items-center justify-center relative top-36 h-screen w-screen bg-[#f5f5f5]'> 
-
+    <div className='flex items-center justify-center relative top-36 h-screen w-screen'> 
       <div className='flex flex-col items-center justify-center w-full max-w-md border px-8 py-8 rounded-lg shadow-lg '>
         <h1 className='font-bold text-2xl'>Welcome to Natura Family</h1>
         <p>Please fill the details below</p>
@@ -89,14 +88,14 @@ const Register = () => {
               name='password'
               value={formData.password}
             />
-            <button className='bg-blue-500 text-white rounded-sm p-2' type="submit">Register</button>
+            <button className='bg-blue-500 text-white rounded-sm p-2 cursor-pointer' type="submit">Register</button>
           </form>
           <div className='w-full flex flex-col justify-center items-center mt-2'>
             <p className='text-xs'>Already have an account? <Link to='/login' className='hover:underline text-blue-400'>Login</Link></p>
           </div>
         </div>
       </div>
-      <ToastContainer transition={Bounce} position="top-right" theme="light" draggable style={{ top:"70px"  }} />
+      <ToastContainer transition={Bounce} position="top-right" theme="light" draggable style={{ top:"70px" }} />
     </div>
   );
 };

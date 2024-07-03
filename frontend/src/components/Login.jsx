@@ -3,10 +3,9 @@ import img from '../../public/assets/cowlogin.jpg';
 import { Link, useNavigate } from 'react-router-dom';
 import { auth, signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from '../firebase/firebaseConfig.js'; 
 import { useAuth } from '../context/AuthContext';
-import { Bounce, ToastContainer, toast} from 'react-toastify';
+import { Bounce, ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { FaGoogle , FaFacebook} from 'react-icons/fa';
-
+import { FaGoogle } from 'react-icons/fa';
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -19,6 +18,7 @@ const Login = () => {
   const { login } = useAuth();
 
   const handleChange = (e) => {
+    setError(null); // Clear the error when the user starts typing
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -38,12 +38,10 @@ const Login = () => {
       login();
 
       // Redirect to the profile page after successful login
-      setTimeout(() => {
-        navigate('/profile');
-      }, 1000);
+      navigate('/profile');
     } catch (error) {
       console.error('Error logging in:', error);
-      toast.error("User not logged in")
+      toast.error("User not logged in");
       setError('Failed to log in. Please check your credentials and try again.');
     }
   };
@@ -59,12 +57,10 @@ const Login = () => {
       login();
 
       // Redirect to the profile page after successful login
-      setTimeout(() => {
-        navigate('/profile');
-      }, 2000);
+      navigate('/profile');
     } catch (error) {
       console.error('Error signing in with Google:', error);
-      toast.error("Google sign-in failed")
+      toast.error("Google sign-in failed");
       setError('Failed to sign in with Google. Please try again.');
     }
   };
@@ -105,7 +101,7 @@ const Login = () => {
           </form>
           <div className='flex flex-col gap-2 mt-4 w-full'>
             <p className='text-xs text-center'>
-              New Customer? <Link to='/register' className='hover:underline text-blue-500'>Create an account</Link>
+              New Customer?<Link to='/register' className='text-blue-500'>Create an Account</Link>
             </p>
             <p className='text-center'>or</p>
             <div className='flex flex-col gap-2 w-full'>
@@ -113,10 +109,11 @@ const Login = () => {
                 <FaGoogle/>
                 Sign in with Google
               </button>
-              <button  className='bg-gray-50 border rounded-sm flex flex-row justify-center items-center gap-4 py-2'>
+              {/* Add Facebook login functionality if needed */}
+              {/* <button className='bg-gray-50 border rounded-sm flex flex-row justify-center items-center gap-4 py-2 cursor-pointer'>
                 <FaFacebook/>
                 Sign in with Facebook
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

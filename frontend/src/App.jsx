@@ -12,18 +12,20 @@ import Register from './components/Register.jsx';
 import { ToastContainer } from 'react-toastify';
 import ForgotPassword from './components/ForgotPassword.jsx';
 import Contact from './pages/Contact.jsx';
+import Admin from './pages/Admin.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
-      <Route path='/' element={<Home />} />
+      <Route index element={<Home />} />
       <Route path='/support' element={<Support />} />
       <Route path='/contact' element={<Contact />} />
       <Route path='/products' element={<Products />} />
       <Route path='/login' element={<Login />} />
       <Route path='/cart' element={<Cart />} />
       <Route path='/register' element={<Register />} />
-      <Route path='/ForgotPassword' element={<ForgotPassword />} />
+      <Route path='/forgot-password' element={<ForgotPassword />} />
+      <Route path='/admin' element={<Admin />} />
       <Route path='/profile' element={
         <ProtectedRoute>
           <Profile />
@@ -36,10 +38,10 @@ const router = createBrowserRouter(
 const App = () => {
   return (
     <div className='w-screen h-screen box-border'>
-    <AuthProvider>
-      <RouterProvider router={router} />
-      <ToastContainer />
-    </AuthProvider>
+      <AuthProvider>
+        <RouterProvider router={router} />
+        <ToastContainer />
+      </AuthProvider>
     </div>
   );
 };

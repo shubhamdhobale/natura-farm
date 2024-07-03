@@ -50,15 +50,15 @@ const Home = () => {
 
 
 
-      <section className="w-full h-full flex flex-col items-center justify-center py-20 border gap-20">
+      <section className="w-full h-full flex flex-col items-center justify-center py-20 border gap-12">
         <h1 className="tracking-wider text-4xl font-semibold">Shop by Category</h1>
         <div className="flex flex-row items-center justify-center w-3/5 gap-16">
-          <div className="w-2/6 flex flex-col gap-6 border p-16 rounded-lg shadow-2xl">
-            <img src={gheejar} alt="" className="rounded-full border border-black shadow-2xl" />
+          <div className="w-2/6 flex flex-col gap-6 p-16 rounded-lg shadow-2xl hover:scale-105 duration-700 transition-all">
+            <img src={gheejar} alt="" className="rounded-full shadow-2xl hover:scale-105 duration-700 transition-all" />
             <h1 className="tracking-wide font-semibold text-center">A2 Desi Gir cow Ghee</h1>
           </div>
-          <div className="w-2/6 flex flex-col gap-6 border p-16 rounded-lg shadow-2xl">
-            <img src={a2milk} alt="" className="rounded-full border border-black shadow-2xl"/>
+          <div className="w-2/6 flex flex-col gap-6 p-16 rounded-lg shadow-2xl hover:scale-105 duration-700 transition-all"> 
+            <img src={a2milk} alt="" className="rounded-full shadow-2xl hover:scale-105 duration-700 transition-all"/>
             <h1 className="tracking-wide font-semibold text-center">A2 Desi Gir cow Milk</h1>
           </div>
         </div>
