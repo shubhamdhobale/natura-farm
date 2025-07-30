@@ -1,7 +1,6 @@
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import Layout from './components/Layout.jsx';
 import Home from './pages/Home.jsx';
-import Support from './pages/Support.jsx';
 import Products from './pages/Products.jsx';
 import Login from './components/Login.jsx';
 import Cart from './components/Cart.jsx';
@@ -13,12 +12,13 @@ import { ToastContainer } from 'react-toastify';
 import ForgotPassword from './components/ForgotPassword.jsx';
 import Contact from './pages/Contact.jsx';
 import Admin from './pages/Admin.jsx';
+import Blogs from './pages/Blogs.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
       <Route index element={<Home />} />
-      <Route path='/support' element={<Support />} />
+      <Route path='/blogs' element={<Blogs />} />
       <Route path='/contact' element={<Contact />} />
       <Route path='/products' element={<Products />} />
       <Route path='/login' element={<Login />} />

@@ -27,7 +27,7 @@ const Navbar = () => {
             <Link to="/" className="text-neutral-700 hover:text-gray-500 hover:underline  px-3 py-2 rounded-md text-md font-medium transition duration-700">Home</Link>
             <Link to="/products" className="text-gray-900 hover:text-gray-500 hover:underline px-3 py-2 rounded-md text-md  font-medium transition duration-300">Products</Link>
             <Link to="/contact" className="text-gray-900 hover:text-gray-500 hover:underline px-3 py-2 rounded-md text-md  font-medium transition duration-300">Contact Us</Link>
-            <Link to="/support" className="text-gray-900 hover:text-gray-500 hover:underline px-3 py-2 rounded-md text-md  font-medium transition duration-300">Support</Link>
+            <Link to="/blogs" className="text-gray-900 hover:text-gray-500 hover:underline px-3 py-2 rounded-md text-md  font-medium transition duration-300">Blogs</Link>
           </div>
           <div className="hidden sm:flex sm:items-center sm:space-x-4">
             {isLoggedIn ? (
